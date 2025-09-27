@@ -5,6 +5,8 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public CharacterController character;
+
+
     // Strength of the gravity
     public float grav = -2.0f;
 
@@ -16,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     private float jumpCooldown = 0.0f;
 
     private Vector2 movement;
-
     public bool player1 = true;
     private KeyCode[] controls = new KeyCode[4];
     

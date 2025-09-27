@@ -1721,6 +1721,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
   m_PrefabInstance: {fileID: 1472703509}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1892644458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: player1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8378459993777980305, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_Name
+      value: Player2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
 --- !u!1 &1913816674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,6 +1948,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
   m_PrefabInstance: {fileID: 659141494}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Scenes/RoomOne.unity
 --- !u!4 &2077150041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
@@ -1949,6 +2011,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+=======
+>>>>>>> Stashed changes:Assets/Scenes/SampleScene.unity
 --- !u!1001 &2745866529947924397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2006,7 +2070,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
---- !u!1001 &7821262442319136720
+--- !u!1001 &9169366853290107133
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2014,59 +2078,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2533359649544755170, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
-      propertyPath: player1
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2722349133423819101, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
-      propertyPath: m_Name
-      value: Player1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalPosition.y
       value: -8.63
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4991183157607290396, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+    - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8378459993777980305, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_Name
+      value: Player1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2075,7 +2135,10 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1068898868}
   - {fileID: 1223271651}
-  - {fileID: 7821262442319136720}
-  - {fileID: 2086477242}
   - {fileID: 1913816675}
+<<<<<<< Updated upstream:Assets/Scenes/RoomOne.unity
   - {fileID: 1611249262}
+=======
+  - {fileID: 9169366853290107133}
+  - {fileID: 1892644458}
+>>>>>>> Stashed changes:Assets/Scenes/SampleScene.unity
