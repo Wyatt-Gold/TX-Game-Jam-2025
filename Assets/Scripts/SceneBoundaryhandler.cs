@@ -4,52 +4,76 @@ using UnityEngine.SceneManagement;
 public class SceneBoundaryHandler : MonoBehaviour
 {
     [Header("Y Position Thresholds")]
-    public float bottomThreshold = -10f;
     public float topThreshold = 10f;
 
     [Header("Scene Settings")]
     public bool useSceneBuildOrder = false;
     public string nextSceneName;
 
-    [Header("Assign Players Manually")]
+    [Header("Players")]
     public GameObject player1;
     public GameObject player2;
 
+    [Header("Rising Sand Settings")]
+    public Transform sandTransform;
+    public float initialSandSpeed = 0.5f;
+    public float sandAcceleration = 0.05f; // Speed increase per second
+
+    private float currentSandSpeed;
     private bool player1Exited = false;
     private bool player2Exited = false;
 
+    void Start()
+    {
+        currentSandSpeed = initialSandSpeed;
+    }
+
     void Update()
     {
-        if (player1 != null)
+        // Accelerate the sand over time
+        currentSandSpeed += sandAcceleration * Time.deltaTime;
+
+        // Move the sand upward
+        if (sandTransform != null)
         {
-            if (player1.transform.position.y < bottomThreshold)
-            {
-                RestartScene();
-            }
-            else if (player1.transform.position.y > topThreshold && !player1Exited)
-            {
-                player1Exited = true;
-                Destroy(player1);
-            }
+            sandTransform.position += Vector3.up * currentSandSpeed * Time.deltaTime;
         }
 
-        if (player2 != null)
-        {
-            if (player2.transform.position.y < bottomThreshold)
-            {
-                RestartScene();
-            }
-            else if (player2.transform.position.y > topThreshold && !player2Exited)
-            {
-                player2Exited = true;
-                Destroy(player2);
-            }
-        }
+        CheckPlayer(player1, ref player1Exited);
+        CheckPlayer(player2, ref player2Exited);
 
         if (player1Exited && player2Exited)
         {
             LoadNextScene();
         }
+    }
+
+    void CheckPlayer(GameObject player, ref bool hasExited)
+    {
+        if (player == null) return;
+
+        float playerY = player.transform.position.y;
+
+        // Restart if player falls into sand
+        if (IsPlayerInSand(playerY))
+        {
+            RestartScene();
+        }
+
+        // Exit at top of screen
+        if (playerY > topThreshold && !hasExited)
+        {
+            hasExited = true;
+            Destroy(player);
+        }
+    }
+
+    bool IsPlayerInSand(float playerY)
+    {
+        if (sandTransform == null) return false;
+
+        float sandTopY = sandTransform.position.y + (sandTransform.localScale.y / 2f);
+        return playerY < sandTopY;
     }
 
     void RestartScene()
@@ -79,7 +103,6 @@ public class SceneBoundaryHandler : MonoBehaviour
             if (!string.IsNullOrEmpty(nextSceneName))
             {
                 SceneManager.LoadScene(nextSceneName);
-                Debug.LogWarning("Loading Next Scene");
             }
             else
             {

@@ -42,25 +42,30 @@ public class PlayerMovement2D : MonoBehaviour
 
     void FixedUpdate()
     {
-
         movement.x = 0;
 
+        // Jumping
         if (Input.GetKey(controls[0]) && GroundCheck())
         {
-            Debug.Log("trying to jump");
             if (Time.time > joc)
             {
-                rb.linearVelocityY = frogPower;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, frogPower);
                 joc = Time.time + jumpCooldown;
             }
         }
-        if (Input.GetKey(controls[2])) rb.linearVelocityY += -1f; //Get to ground faster
+
+        // Fast fall
+        if (Input.GetKey(controls[2]))
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y - 1f);
+        }
+
+        // Left/right movement
         if (Input.GetKey(controls[1])) movement.x = -1 * moveSpeed;
         if (Input.GetKey(controls[3])) movement.x = moveSpeed;
 
-        rb.linearVelocityX = movement.x;
-
-        //Debug.Log(GroundCheck() + movement.ToString());
+        // Apply horizontal movement while preserving vertical motion
+        rb.linearVelocity = new Vector2(movement.x, rb.linearVelocity.y);
     }
 
     void OnDrawGizmos()
