@@ -410,7 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickSound: {fileID: 8300000, guid: f4cdb23b714aa5548b1227fcbbf4efec, type: 3}
   delayBeforeLoad: 0.25
-  sceneToLoad: SampleScene
+  sceneToLoad: RoomOne
 --- !u!114 &426026768
 MonoBehaviour:
   m_ObjectHideFlags: 0
