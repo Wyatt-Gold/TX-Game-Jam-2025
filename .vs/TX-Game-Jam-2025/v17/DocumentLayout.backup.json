@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\repressablebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\repressablebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\playermovement2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\playermovementtemporary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovementtemporary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\torchpuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\torchpuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\assets\\scripts\\buttonpress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,54 +26,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerMovementTemporary.cs",
-              "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\PlayerMovementTemporary.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovementTemporary.cs",
-              "ToolTip": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\PlayerMovementTemporary.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMovementTemporary.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T16:43:14.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerMovement2D.cs",
-              "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\PlayerMovement2D.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement2D.cs",
-              "ToolTip": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\PlayerMovement2D.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement2D.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwDgAAAAbAAAAAAAAAA==",
+              "Title": "TorchPuzzle.cs",
+              "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\TorchPuzzle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TorchPuzzle.cs",
+              "ToolTip": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\TorchPuzzle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TorchPuzzle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T16:26:15.882Z",
+              "WhenOpened": "2025-09-27T20:24:18.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwD8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T15:59:00.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ButtonPress.cs",
               "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\ButtonPress.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonPress.cs",
               "ToolTip": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\ButtonPress.cs",
               "RelativeToolTip": "Assets\\Scripts\\ButtonPress.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwDYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T15:57:23.856Z"
+              "WhenOpened": "2025-09-27T19:34:49.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepressableButton.cs",
+              "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\RepressableButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RepressableButton.cs",
+              "ToolTip": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\RepressableButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RepressableButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T19:34:02.105Z",
+              "EditorCaption": ""
             }
           ]
         }
