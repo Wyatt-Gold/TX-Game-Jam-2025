@@ -7,6 +7,7 @@ public class ButtonPress : MonoBehaviour
     public float moveDistance;
     public float moveDuration;
     public Light2D torchLight;
+    public ButtonPuzzleManager manager;
 
     private bool isPressed = false;
     private Vector3 originalPosition;
@@ -29,6 +30,7 @@ public class ButtonPress : MonoBehaviour
             float direction = GetPlayerHitDirection(other);
             Vector3 targetPosition = originalPosition + new Vector3(moveDistance * direction, 0f, 0f);
             StartCoroutine(MoveButtonSmoothly(button, targetPosition, moveDuration));
+            manager.ButtonPressed();
 
             LightTorch();
         }
