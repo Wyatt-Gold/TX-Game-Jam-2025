@@ -4,6 +4,7 @@ using System.IO;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.Rendering.Universal;
 
 public class TorchPuzzle : MonoBehaviour
 {
@@ -89,20 +90,23 @@ public class TorchPuzzle : MonoBehaviour
         //Debug.Log(on[0] + " " + on[1] + " " + on[2]);
         for (int i = 0; i < toggles.Length; i++)
         {
-            //Debug.Log(toggles[i].GetComponentsInChildren<Transform>()[0]);
-            if (on[i])
+            foreach (Transform child in toggles[i].GetComponentsInChildren<Transform>())
             {
-                foreach (Transform child in toggles[i].GetComponentsInChildren<Transform>())
+                if (child.name.Equals("Bowl"))
                 {
-                    if (child.name.Equals("Bowl")) child.GetComponent<SpriteRenderer>().color = transp;
-                    if (child.name.Equals("Flame")) child.GetComponent<SpriteRenderer>().color = opaq;
+                    child.GetComponent<SpriteRenderer>().color = on[i] ? transp : opaq;
                 }
-            } else
-            {
-                foreach (Transform child in toggles[i].GetComponentsInChildren<Transform>())
+                else if (child.name.Equals("Flame"))
                 {
-                    if (child.name.Equals("Bowl")) child.GetComponent<SpriteRenderer>().color = opaq;
-                    if (child.name.Equals("Flame")) child.GetComponent<SpriteRenderer>().color = transp;
+                    // Toggle the sprite
+                    child.GetComponent<SpriteRenderer>().color = on[i] ? opaq : transp;
+
+                    // Toggle the Light2D component
+                    Light2D light = child.GetComponent<Light2D>();
+                    if (light != null)
+                    {
+                        light.enabled = on[i];
+                    }
                 }
             }
         }

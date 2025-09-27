@@ -31,10 +31,10 @@ public class PlayerMovement2D : MonoBehaviour
         }
         else
         {
-            controls[0] = KeyCode.UpArrow;
-            controls[1] = KeyCode.LeftArrow;
-            controls[2] = KeyCode.DownArrow;
-            controls[3] = KeyCode.RightArrow;
+            controls[0] = KeyCode.I;
+            controls[1] = KeyCode.J;
+            controls[2] = KeyCode.K;
+            controls[3] = KeyCode.L;
         }
 
         

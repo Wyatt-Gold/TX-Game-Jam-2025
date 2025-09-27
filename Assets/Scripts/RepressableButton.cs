@@ -3,17 +3,16 @@ using UnityEngine.Rendering.Universal;
 
 public class RepressableButton : MonoBehaviour
 {
-
     public Transform button;
     public float moveDistance;
     public float moveDuration;
     public GameObject target;
-    // ID saves the specific action which the button calls for.
-    // 1: Left rotation
-    // 2: Right rotation
-    // 3: Toggle [1]
-    // 4: Toggle [1], [2], [3]
-    // 5: Toggle [1], [3]
+
+    [Header("Button Sprites")]
+    public SpriteRenderer buttonSpriteRenderer; // Drag your SpriteRenderer here
+    public Sprite unpressedSprite;
+    public Sprite pressedSprite;
+
     public byte ID = 1;
 
     private bool isPressed = false;
@@ -23,7 +22,10 @@ public class RepressableButton : MonoBehaviour
     {
         if (button != null)
             originalPosition = button.localPosition;
-        
+
+        // Set to unpressed sprite at start
+        if (buttonSpriteRenderer != null && unpressedSprite != null)
+            buttonSpriteRenderer.sprite = unpressedSprite;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -35,6 +37,10 @@ public class RepressableButton : MonoBehaviour
             float direction = GetPlayerHitDirection(other);
             Vector3 targetPosition = originalPosition + new Vector3(0f, moveDistance * direction, 0f);
             StartCoroutine(ButtonPressCycle(button, targetPosition, moveDuration));
+
+            // Change to pressed sprite
+            if (buttonSpriteRenderer != null && pressedSprite != null)
+                buttonSpriteRenderer.sprite = pressedSprite;
 
             MessageTarget();
         }
@@ -59,6 +65,9 @@ public class RepressableButton : MonoBehaviour
 
         obj.localPosition = destination;
 
+        // Pause for realism, optional:
+        yield return new WaitForSeconds(0.1f);
+
         elapsed = 0f;
         startPos = obj.localPosition;
         destination = originalPosition;
@@ -73,11 +82,14 @@ public class RepressableButton : MonoBehaviour
         obj.localPosition = originalPosition;
         isPressed = false;
 
+        // Change back to unpressed sprite
+        if (buttonSpriteRenderer != null && unpressedSprite != null)
+            buttonSpriteRenderer.sprite = unpressedSprite;
     }
 
     private void MessageTarget()
     {
-        //Debug.Log("Sending message");
-        target.GetComponent<TorchPuzzle>().RecieveCommand(ID);
+        if (target != null)
+            target.GetComponent<TorchPuzzle>().RecieveCommand(ID);
     }
 }
