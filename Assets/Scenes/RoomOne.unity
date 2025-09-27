@@ -1948,7 +1948,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
   m_PrefabInstance: {fileID: 659141494}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/RoomOne.unity
 --- !u!4 &2077150041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
@@ -2011,8 +2010,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ecbab094ae6a346961afc20b788581, type: 3}
-=======
->>>>>>> Stashed changes:Assets/Scenes/SampleScene.unity
 --- !u!1001 &2745866529947924397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2136,9 +2133,4 @@ SceneRoots:
   - {fileID: 1068898868}
   - {fileID: 1223271651}
   - {fileID: 1913816675}
-<<<<<<< Updated upstream:Assets/Scenes/RoomOne.unity
   - {fileID: 1611249262}
-=======
-  - {fileID: 9169366853290107133}
-  - {fileID: 1892644458}
->>>>>>> Stashed changes:Assets/Scenes/SampleScene.unity
