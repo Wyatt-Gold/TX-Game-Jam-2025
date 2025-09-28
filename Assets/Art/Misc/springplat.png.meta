@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: ef0221e6d652201438c9dd0447968bb3
+guid: d76c53e1c60354343ab60135fdf82f91
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4320295261928297051
-    second: logo_0
-  - first:
-      213: 5470614613321624601
-    second: logo_1
+      213: -6502802264617846144
+    second: springplat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: logo_0
+      name: springplat_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 14
-        width: 226
-        height: 91
+        x: 0
+        y: 0
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ade5f3695a3b04c0800000000000000
-      internalID: -4320295261928297051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: logo_1
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 2
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91ca81a91078beb40800000000000000
-      internalID: 5470614613321624601
+      spriteID: 08af8dc2bc761c5a0800000000000000
+      internalID: -6502802264617846144
       vertices: []
       indices: 
       edges: []

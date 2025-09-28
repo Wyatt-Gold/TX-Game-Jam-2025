@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sandclump_0: -2823136787033269657
+      sandclump_1: -8222503560481051756
+      sandclump_2: -2762046651813050510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

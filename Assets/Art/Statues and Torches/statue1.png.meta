@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0f25da16fcdcc304eb618c7eefd673e9
+guid: deedd95836f4e264ca0e94647a2b26f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 130452656225014213
-    second: Desert_0
+      213: -8390701871167305988
+    second: statue1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Desert_0
+      name: statue1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 420
-        height: 280
+        width: 51
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c15c4aeff57fc100800000000000000
-      internalID: 130452656225014213
+      spriteID: cf60ed0aa1d3e8b80800000000000000
+      internalID: -8390701871167305988
       vertices: []
       indices: 
       edges: []
