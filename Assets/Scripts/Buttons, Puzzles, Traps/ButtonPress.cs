@@ -11,6 +11,7 @@ public class ButtonPress : MonoBehaviour
 
     private bool isPressed = false;
     private Vector3 originalPosition;
+    private AudioSource torchAudioSource;
 
     void Start()
     {
@@ -18,7 +19,12 @@ public class ButtonPress : MonoBehaviour
             originalPosition = button.localPosition;
 
         if (torchLight != null)
-            torchLight.enabled = false; // Light off at start
+            torchLight.enabled = false;
+
+        torchAudioSource = GetComponentInParent<AudioSource>();
+
+        if (torchAudioSource != null)
+            torchAudioSource.playOnAwake = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -62,6 +68,9 @@ public class ButtonPress : MonoBehaviour
         {
             torchLight.enabled = true;
             Debug.Log("Torch Lit");
+
+            if (torchAudioSource != null)
+                torchAudioSource.Play();
         }
     }
 }
