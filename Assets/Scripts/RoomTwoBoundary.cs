@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class RoomTwoBoundary : MonoBehaviour
 {
     Collider2D stairs;
-    
+
     [Header("Scene Settings")]
     public bool useSceneBuildOrder = false;
     public string nextSceneName;
@@ -62,7 +61,7 @@ public class RoomTwoBoundary : MonoBehaviour
         }
         else if (collision.gameObject == player2)
         {
-            player2Exited = true; 
+            player2Exited = true;
         }
     }
 
