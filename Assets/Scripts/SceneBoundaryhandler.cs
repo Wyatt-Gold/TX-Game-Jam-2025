@@ -10,6 +10,8 @@ public class SceneBoundaryHandler : MonoBehaviour
     public bool useSceneBuildOrder = false;
     public string nextSceneName;
 
+    public GameObject canvas;
+
     [Header("Players")]
     public GameObject player1;
     public GameObject player2;
@@ -57,7 +59,7 @@ public class SceneBoundaryHandler : MonoBehaviour
         // Restart if player falls into sand
         if (IsPlayerInSand(playerY))
         {
-            RestartScene();
+            PauseScene();
         }
 
         // Exit at top of screen
@@ -76,10 +78,10 @@ public class SceneBoundaryHandler : MonoBehaviour
         return playerY < sandTopY;
     }
 
-    void RestartScene()
+    void PauseScene()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        Time.timeScale = 0f;
+        canvas.SetActive(true);
     }
 
     void LoadNextScene()
