@@ -439,11 +439,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
   m_PrefabInstance: {fileID: 1482603328}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &123227851 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7006959056842678047, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
-  m_PrefabInstance: {fileID: 1392648894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &123227852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
@@ -1282,11 +1277,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalButtons: 3
-  objectsToMove:
-  - {fileID: 123227851}
-  - {fileID: 1597429143}
-  moveDistance: 1
-  moveDuration: 2
+  objectsToMove: []
+  moveDistance: 0.5
+  moveDuration: 0.5
   lightObject: {fileID: 619394800}
 --- !u!4 &308844534
 Transform:
@@ -2527,9 +2520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1496848521529811903, guid: ade280589f22c814aa1598a2b87c735c, type: 3}
-  spawnInterval: 3
-  spawnRangeX: 15
-  spawnHeight: 17
+  spawnInterval: 2
+  spawnRangeX: 8
+  spawnHeight: 6
 --- !u!4 &519617265
 Transform:
   m_ObjectHideFlags: 0
@@ -2957,8 +2950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 552121021}
-  moveDistance: 0.2
-  moveDuration: 0.25
+  moveDistance: 0.25
+  moveDuration: 1
   torchLight: {fileID: 978790693}
   manager: {fileID: 308844533}
 --- !u!61 &552121024
@@ -4568,8 +4561,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 877776007}
-  moveDistance: 0.2
-  moveDuration: 0.25
+  moveDistance: 0.25
+  moveDuration: 1
   torchLight: {fileID: 717151864}
   manager: {fileID: 308844533}
 --- !u!61 &877776010
@@ -5400,8 +5393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1068898868}
-  moveDistance: 0.2
-  moveDuration: 0.25
+  moveDistance: 0.25
+  moveDuration: 1
   torchLight: {fileID: 1223271649}
   manager: {fileID: 308844533}
 --- !u!61 &1068898866
@@ -6348,7 +6341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite1: {fileID: 21300000, guid: ece94325aea10064bbcb627e1a5d4b2a, type: 3}
   sprite2: {fileID: 21300000, guid: be202fd084584114692833fad7fc665a, type: 3}
-  switchInterval: 0.2
+  switchInterval: 0.15
 --- !u!212 &1312058944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7874,7 +7867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite1: {fileID: 8287623283939121674, guid: 3d7baf208234a8a469a7ac038c56d67c, type: 3}
   sprite2: {fileID: -3479864540519663629, guid: a188b6ae224863147849266def0b9436, type: 3}
-  switchInterval: 0.2
+  switchInterval: 0.15
 --- !u!212 &1587275219
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7930,11 +7923,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1597429143 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7006959056842678047, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
-  m_PrefabInstance: {fileID: 1611715795}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1597429144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471875921982492742, guid: c5604f8b0b2025d49a1da8441335eecf, type: 3}
@@ -8734,6 +8722,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 511426245985627904, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8672638957200025951, guid: 05aa7f4bc4ff6214ea054f3e9056c909, type: 3}
     - target: {fileID: 6043725214524767297, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -8778,6 +8770,46 @@ PrefabInstance:
       propertyPath: player1
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: runSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: idleSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: jumpSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'runSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2239079977791863805, guid: 422ce36f920cb7d4190341ba9075ea6e, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'runSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8923132468455384245, guid: 81f3a0babcc90b342ae7bdf4c9709914, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'idleSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -8672638957200025951, guid: 05aa7f4bc4ff6214ea054f3e9056c909, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'idleSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7683522557275458760, guid: 98398e115e0a5fe40be9554699b55511, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'jumpSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -6435071689600691051, guid: d655d35439028eb42a4c6d4422c62088, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'jumpSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1483358534663729189, guid: 7e7e06325fa307f45bdb316a196b5305, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'jumpSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 595830169664323889, guid: 322e5d04efff8614f8714cda18f981c6, type: 3}
     - target: {fileID: 8378459993777980305, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_Name
       value: Player2
@@ -9165,7 +9197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite1: {fileID: 21300000, guid: ece94325aea10064bbcb627e1a5d4b2a, type: 3}
   sprite2: {fileID: 21300000, guid: be202fd084584114692833fad7fc665a, type: 3}
-  switchInterval: 0.2
+  switchInterval: 0.15
 --- !u!212 &1957295497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9847,7 +9879,7 @@ MonoBehaviour:
   - {fileID: 4515345014635656613, guid: a7cd47569684cf745a7f152bb22744c9, type: 3}
   - {fileID: -6711598216978553943, guid: f5aa695ea66dc244ab3fe6ed72d43d07, type: 3}
   - {fileID: 3367211249405666853, guid: 4aaf8361fc52d7742af6a0ce94816f0c, type: 3}
-  cycleDelay: 0.2
+  cycleDelay: 0.25
 --- !u!212 &2107894532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10043,6 +10075,14 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 511426245985627904, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4702544020559098553, guid: 24ebdd932c1414641a6e97a150a3d81f, type: 3}
+    - target: {fileID: 511426245985627904, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3200155180101729814, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -10091,6 +10131,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: runSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: idleSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: jumpSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'runSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -7360578046925828638, guid: 7c36561a57e032a4d89934420a632920, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'runSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7442152183004786022, guid: ec876504dcc467f4b8004cebd4bf2c2c, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'idleSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -4702544020559098553, guid: 24ebdd932c1414641a6e97a150a3d81f, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'idleSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 65400084286058479, guid: 4c76abb875ef2454a941d205b78b9062, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'jumpSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2718549965948015688, guid: 991cb9ca98873e94a9ddd6f5d9d40a37, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'jumpSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7706578342706636681, guid: 1a7b2c206ebc17a43804b1b70eacf6e1, type: 3}
+    - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
+      propertyPath: 'jumpSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 9161767924448710838, guid: e351227b7f12caa499ad77b27788c2b9, type: 3}
     - target: {fileID: 8378459993777980305, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_Name
       value: Player1
