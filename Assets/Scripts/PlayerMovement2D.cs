@@ -16,6 +16,7 @@ public class PlayerMovement2D : MonoBehaviour
 
     private Vector2 movement;
     public bool player1 = true;
+    public bool Player2IJKLControls = false;
     private KeyCode[] controls = new KeyCode[4];
 
     // Start is called before the first frame update
@@ -29,12 +30,18 @@ public class PlayerMovement2D : MonoBehaviour
             controls[2] = KeyCode.S;
             controls[3] = KeyCode.D;
         }
-        else
+        else if (Player2IJKLControls)
         {
             controls[0] = KeyCode.I;
             controls[1] = KeyCode.J;
             controls[2] = KeyCode.K;
             controls[3] = KeyCode.L;
+        } else
+        {
+            controls[0] = KeyCode.UpArrow;
+            controls[1] = KeyCode.LeftArrow;
+            controls[2] = KeyCode.DownArrow;
+            controls[3] = KeyCode.RightArrow;
         }
 
         

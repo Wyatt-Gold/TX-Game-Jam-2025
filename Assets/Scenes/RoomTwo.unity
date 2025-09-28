@@ -1096,7 +1096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169851377999221713, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: player1
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8378459993777980305, guid: ff42d16d9ca6592438562ca052a008dc, type: 3}
       propertyPath: m_Name
