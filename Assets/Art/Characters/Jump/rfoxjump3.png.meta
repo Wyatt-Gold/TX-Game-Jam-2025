@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rfoxjump3_0: 595830169664323889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

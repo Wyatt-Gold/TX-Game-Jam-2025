@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      foxjump3_0: 9161767924448710838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

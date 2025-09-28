@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      foxside2_0: 7442152183004786022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
