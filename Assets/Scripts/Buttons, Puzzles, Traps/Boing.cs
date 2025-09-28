@@ -7,9 +7,11 @@ public class Boing : MonoBehaviour
     public float boingFactor = 1.0f;
     public float tooMuchBoing = 30f;
 
+    AudioSource boing;
+
     void Start()
     {
-        
+        boing = GetComponent<AudioSource>();
     }
 
     // Reverses the linear velocity of the colliding Rigidbody2D.
@@ -19,5 +21,6 @@ public class Boing : MonoBehaviour
         float newVelocity = bounce.linearVelocityY * -boingFactor;
         if (newVelocity > tooMuchBoing) newVelocity = tooMuchBoing;
         bounce.linearVelocityY = newVelocity;
+        if (newVelocity > 0) boing.Play();
     }
 }

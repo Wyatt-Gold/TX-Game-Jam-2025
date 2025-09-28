@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\buttons, puzzles, traps\\boing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttons, puzzles, traps\\boing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\sceneboundaryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sceneboundaryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|c:\\users\\babya\\unity\\tx-game-jam-2025\\assets\\scripts\\roomtwoboundary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\assets\\scripts\\roomtwoboundary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E7CE774-0BF2-23AD-B777-1E3E6A262DEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roomtwoboundary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Boing.cs",
+              "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\Buttons, Puzzles, Traps\\Boing.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Buttons, Puzzles, Traps\\Boing.cs",
+              "ToolTip": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\Buttons, Puzzles, Traps\\Boing.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Buttons, Puzzles, Traps\\Boing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T21:58:47.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RoomTwoBoundary.cs",
               "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\RoomTwoBoundary.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RoomTwoBoundary.cs",
@@ -30,12 +47,11 @@
               "RelativeToolTip": "Assets\\Scripts\\RoomTwoBoundary.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAA1wC8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T21:41:31.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T21:41:31.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SceneBoundaryhandler.cs",
               "DocumentMoniker": "C:\\Users\\babya\\Unity\\TX-Game-Jam-2025\\Assets\\Scripts\\SceneBoundaryhandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneBoundaryhandler.cs",
