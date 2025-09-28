@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal; 
 
 public class ButtonPuzzleManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class ButtonPuzzleManager : MonoBehaviour
     public float moveDistance = 1f;
     public float moveDuration = 2f;
 
+    [Header("Lighting")]
+    public GameObject lightObject;
+
     private bool puzzleCompleted = false;
 
     // Called by buttons when clicked
@@ -23,6 +27,17 @@ public class ButtonPuzzleManager : MonoBehaviour
         {
             puzzleCompleted = true;
             StartCoroutine(MoveObjectsUpward());
+
+            // Change light intensity
+            Light2D light2D = lightObject.GetComponent<Light2D>();
+            if (light2D != null)
+            {
+                light2D.intensity = 1f;
+            }
+            else
+            {
+                Debug.LogWarning("No Light2D component found on lightObject.");
+            }
         }
     }
 
