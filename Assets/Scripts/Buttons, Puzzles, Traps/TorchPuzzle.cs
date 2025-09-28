@@ -11,7 +11,7 @@ public class TorchPuzzle : MonoBehaviour
 
     public GameObject[] toggles;
     public bool[] on;
-    private bool editable = true;
+    private bool editable = false;
 
     private Color transp = new Color(1f, 1f, 1f, 0f);
     private Color opaq = new Color(1f, 1f, 1f, 1f);
@@ -21,15 +21,15 @@ public class TorchPuzzle : MonoBehaviour
     void Start()
     {
         on = new bool[toggles.Length];
-        // 5 torch puzzles will currently begin with none active. 
         if (toggles.Length == 3)
         {
             on[UnityEngine.Random.Range(0, 2)] = true;
         }
 
-        RefreshToggles();
-
         victoryAudio = GetComponent<AudioSource>();
+
+        StartCoroutine(VictoryDance(-.75f, 1f, 3));
+
     }
 
     public void RecieveCommand(byte ID)
@@ -52,7 +52,7 @@ public class TorchPuzzle : MonoBehaviour
         {
             editable = false;
             //Write what happens upon victory
-            StartCoroutine(VictoryDance());
+            StartCoroutine(VictoryDance(.75f, 1f, 3));
             
         }
     }
@@ -91,6 +91,8 @@ public class TorchPuzzle : MonoBehaviour
     /// </summary>
     void RefreshToggles()
     {
+        if (editable == false) editable = true;
+        
         //Debug.Log(on[0] + " " + on[1] + " " + on[2]);
         for (int i = 0; i < toggles.Length; i++)
         {
@@ -127,19 +129,20 @@ public class TorchPuzzle : MonoBehaviour
     }
 
     // Inspired by door opening sequences in Final Fantasy VI 
-    System.Collections.IEnumerator VictoryDance()
+    System.Collections.IEnumerator VictoryDance(float increment, float timeIncrement, float cycles)
     {
-        float increment = 0.75f;
-        float timeIncrement = 2;
-        float cycles = 3;
-
-        if (victoryAudio != null)
-            victoryAudio.Play();
+        //float increment = 0.75f;
+        //float timeIncrement = 2;
+        //float cycles = 3;
 
         while (cycles-- > 0)
         {
             transform.position = transform.position + Vector3.up * increment;
+            if (cycles % 2 == 1) victoryAudio.Play();
             yield return new WaitForSeconds(timeIncrement);
         }
+
+        RefreshToggles();
+        
     }
 }

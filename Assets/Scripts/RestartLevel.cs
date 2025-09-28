@@ -6,7 +6,7 @@ public class RestartLevel : MonoBehaviour
     public GameObject canvas;
     void Start()
     {
-        canvas.SetActive(false);
+        //canvas.SetActive(false);
     }
 
     void Update()

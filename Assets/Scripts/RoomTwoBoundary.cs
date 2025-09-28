@@ -23,6 +23,7 @@ public class RoomTwoBoundary : MonoBehaviour
     private bool player1Exited = false;
     private bool player2Exited = false;
 
+    public GameObject canvas;
 
     void Start()
     {
@@ -43,7 +44,8 @@ public class RoomTwoBoundary : MonoBehaviour
 
         if (IsPlayerInSand(player1.transform.localPosition.y) || IsPlayerInSand(player2.transform.localPosition.y))
         {
-            RestartScene();
+            if (Time.timeScale > 0) Instantiate(canvas);
+            Time.timeScale = 0f;
         }
 
         if (player1Exited && player2Exited)

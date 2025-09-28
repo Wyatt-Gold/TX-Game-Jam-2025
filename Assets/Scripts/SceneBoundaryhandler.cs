@@ -80,8 +80,9 @@ public class SceneBoundaryHandler : MonoBehaviour
 
     void PauseScene()
     {
+        if (Time.timeScale > 0)
+            Instantiate(canvas);
         Time.timeScale = 0f;
-        canvas.SetActive(true);
     }
 
     void LoadNextScene()
