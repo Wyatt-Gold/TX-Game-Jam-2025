@@ -9,7 +9,7 @@ public class ButtonPuzzleManager : MonoBehaviour
 
     [Header("Objects to Move")]
     public GameObject[] objectsToMove;
-    public float moveDistance = 5f;
+    public float moveDistance = 1f;
     public float moveDuration = 2f;
 
     private bool puzzleCompleted = false;
