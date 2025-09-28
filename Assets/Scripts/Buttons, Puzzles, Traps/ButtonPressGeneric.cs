@@ -11,6 +11,7 @@ public class ButtonPressGeneric : MonoBehaviour
     private bool isPressed = false;
     public bool actionReady = false;
     private Vector3 originalPosition;
+    private AudioSource torchAudioSource;
 
     void Awake()
     {
@@ -18,6 +19,14 @@ public class ButtonPressGeneric : MonoBehaviour
             originalPosition = button.localPosition;
 
         actionReady = false;
+    }
+
+    private void Start()
+    {
+        torchAudioSource = GetComponentInParent<AudioSource>();
+
+        if (torchAudioSource != null)
+            torchAudioSource.playOnAwake = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -44,6 +53,9 @@ public class ButtonPressGeneric : MonoBehaviour
     {
         float elapsed = 0f;
         Vector3 startPos = obj.localPosition;
+
+        if (torchAudioSource != null)
+            torchAudioSource.Play();
 
         while (elapsed < duration)
         {

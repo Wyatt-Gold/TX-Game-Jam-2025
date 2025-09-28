@@ -16,6 +16,8 @@ public class TorchPuzzle : MonoBehaviour
     private Color transp = new Color(1f, 1f, 1f, 0f);
     private Color opaq = new Color(1f, 1f, 1f, 1f);
 
+    private AudioSource victoryAudio;
+
     void Start()
     {
         on = new bool[toggles.Length];
@@ -26,6 +28,8 @@ public class TorchPuzzle : MonoBehaviour
         }
 
         RefreshToggles();
+
+        victoryAudio = GetComponent<AudioSource>();
     }
 
     public void RecieveCommand(byte ID)
@@ -128,6 +132,10 @@ public class TorchPuzzle : MonoBehaviour
         float increment = 0.75f;
         float timeIncrement = 2;
         float cycles = 3;
+
+        if (victoryAudio != null)
+            victoryAudio.Play();
+
         while (cycles-- > 0)
         {
             transform.position = transform.position + Vector3.up * increment;

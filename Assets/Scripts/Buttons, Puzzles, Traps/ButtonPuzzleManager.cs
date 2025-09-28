@@ -15,6 +15,7 @@ public class ButtonPuzzleManager : MonoBehaviour
 
     [Header("Lighting")]
     public GameObject lightObject;
+    public float finalIntensity = 1.0f;
 
     private bool puzzleCompleted = false;
 
@@ -32,7 +33,7 @@ public class ButtonPuzzleManager : MonoBehaviour
             Light2D light2D = lightObject.GetComponent<Light2D>();
             if (light2D != null)
             {
-                light2D.intensity = 1f;
+                light2D.intensity = finalIntensity;
             }
             else
             {

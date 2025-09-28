@@ -17,6 +17,7 @@ public class RepressableButton : MonoBehaviour
 
     private bool isPressed = false;
     private Vector3 originalPosition;
+    private AudioSource torchAudioSource;
 
     void Start()
     {
@@ -26,6 +27,11 @@ public class RepressableButton : MonoBehaviour
         // Set to unpressed sprite at start
         if (buttonSpriteRenderer != null && unpressedSprite != null)
             buttonSpriteRenderer.sprite = unpressedSprite;
+
+        torchAudioSource = GetComponentInParent<AudioSource>();
+
+        if (torchAudioSource != null)
+            torchAudioSource.playOnAwake = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -55,6 +61,9 @@ public class RepressableButton : MonoBehaviour
     {
         float elapsed = 0f;
         Vector3 startPos = obj.localPosition;
+
+        if (torchAudioSource != null)
+            torchAudioSource.Play();
 
         while (elapsed < duration)
         {
