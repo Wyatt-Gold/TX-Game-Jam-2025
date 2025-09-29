@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
+  canvas: {fileID: 4112078403588529678, guid: 94db0a37b4d21154086301ac2168c388, type: 3}
 --- !u!61 &6596824675829727637
 BoxCollider2D:
   m_ObjectHideFlags: 0
